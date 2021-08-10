@@ -47,6 +47,7 @@ public class Click extends CommandHandler {
   @Override
   public AndroidCommandResult execute(final AndroidCommand command)
       throws JSONException {
+    Logger.debug("Aaron test driver excute click");
     if (command.isElementCommand()) {
       try {
         final AndroidElement el = command.getElement();
